@@ -23,7 +23,7 @@ struct MatchViewStats: View {
                 .frame(height: 20)
             ZStack {
                 RoundedRectangle(cornerRadius: 25.0, style: .continuous)
-                    .fill(Color.blue.opacity(0.2))
+                    .fill(Color.red.opacity(0.2))
                     .frame(height: 200)
                 
                 RoundedRectangle(cornerRadius: 25.0, style: .continuous)
@@ -62,7 +62,7 @@ struct MatchViewStats: View {
                 .padding(.horizontal)
             ZStack {
                 RoundedRectangle(cornerRadius: 25.0, style: .continuous)
-                    .fill(Color.blue.opacity(0.2))
+                    .fill(Color.red.opacity(0.2))
                     .frame(height: 200)
                 
                 RoundedRectangle(cornerRadius: 25.0, style: .continuous)

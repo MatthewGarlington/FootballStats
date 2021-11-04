@@ -17,11 +17,11 @@ struct SubstitutionView: View {
     var body: some View {
         ZStack(alignment: .top) {
             RoundedCorners(tl: 0, tr: 0, bl: 25, br: 25)
-                .fill(Color.white)
+                .fill(Material.bar)
                 .frame(width: 175, height: 150)
                 .shadow(color: .black.opacity(0.2), radius: 20, x: 0, y: 10)
             Rectangle()
-                .fill(Color.red.opacity(0.2))
+                .fill(Color.red.opacity(0.8))
                 .frame(width: 175, height: 30)
             Rectangle()
                 .fill(Color.black.opacity(0.2))

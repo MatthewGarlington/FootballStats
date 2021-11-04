@@ -10,10 +10,15 @@ struct MatchView: View {
     var body: some View {
         VStack {
             MatchView1()
+            ZStack {
+                LinearGradient(colors: [.white, .red.opacity(0.2), .white, .white], startPoint: .top, endPoint: .bottom)
+                    .edgesIgnoringSafeArea(.all)
+                    .background(Material.regular)
             ScrollView {
                 LazyHStack {
                     PageView()
                 }
+            }
             }
         }
     }
@@ -30,21 +35,7 @@ struct PageView: View {
     var body: some View {
         TabView(selection: $nextTab) {
             VStack {
-                HStack {
-                    Text("Events")
-                        .font(.largeTitle)
-                        .bold()
-                    Button {
-                        nextTab += 1
-                    } label: {
-                        Image(systemName: "chevron.right")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 20, height: 20)
-                            .foregroundColor(.black)
-                    }
-                    .offset(x: 100)
-                }
+                HeaderView(nextTab: $nextTab, backArrowImage: nil , forwardArrowImage: "chevron.right", title: "Events", backNumber: 1, forwardNumber: 1)
                 MatchViewEvents()
                 Spacer()
             }

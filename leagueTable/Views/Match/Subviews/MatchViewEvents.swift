@@ -17,6 +17,8 @@ struct MatchViewEvents: View {
             GridItem(.adaptive(minimum: UIScreen.main.bounds.height / 5))
             ]
 
+        ZStack {
+
         LazyVGrid(columns: columns, spacing: 20) {
             ForEach(dataController.matchInfo?.data?.match_events ?? [], id: \.self) { clubs in
                     if(clubs.type == "yellowcard"){
@@ -30,6 +32,7 @@ struct MatchViewEvents: View {
                     if(clubs.type == "substitution"){
                         SubstitutionView(substitutionMin: clubs.minute ?? 0, substitutionPlayerOff: clubs.player_name ?? "", substitutionPlayerOn: clubs.related_player_name ?? "")
                 }
+            }
             }
         }
     }

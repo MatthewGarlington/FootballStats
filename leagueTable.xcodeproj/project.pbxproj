@@ -303,6 +303,7 @@
 				7C05785A2717B528006C77F5 /* MatchViewButtons.swift */,
 				7CC5AA73271B0E260091ACEC /* MatchViewStats.swift */,
 				7CC5AA75271B0E830091ACEC /* MatchViewLineUps.swift */,
+				9E16B11726FBCD7F008981E2 /* PremierLeagueTableView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -343,7 +344,6 @@
 				9EE3720B26F3E4FF00D3D863 /* EnglishRefView.swift */,
 				9E16B11926FD1586008981E2 /* BookmakerView.swift */,
 				9EC696AB26FA8DD200A174A4 /* EnglishLeagueDevInfo.swift */,
-				9E16B11726FBCD7F008981E2 /* PremierLeagueTableView.swift */,
 				9EE3720326F3DD7E00D3D863 /* StartScreen.swift */,
 				9EE3720526F3DE2300D3D863 /* MainMenuView.swift */,
 				9EC696A726FA689100A174A4 /* JSONlists.swift */,
@@ -384,6 +384,7 @@
 		7CC5AA91271BBA9B0091ACEC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				7C6910A62700B8F200FF1F05 /* SupportFiles */,
 				7CC5AA92271BBAAA0091ACEC /* Custom */,
 			);
 			path = Helpers;
@@ -422,7 +423,6 @@
 			children = (
 				9EE371D726F277E500D3D863 /* leagueTableApp.swift */,
 				7CC5AA91271BBA9B0091ACEC /* Helpers */,
-				7C6910A62700B8F200FF1F05 /* SupportFiles */,
 				7C6910722700A77B00FF1F05 /* Views */,
 				7C6910712700A77400FF1F05 /* Model */,
 				7C6910732700A78F00FF1F05 /* DataControllers */,
